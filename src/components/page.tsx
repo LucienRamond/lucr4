@@ -10,14 +10,13 @@ export default function Page({
   style?: string;
 }) {
   return (
-    <div className={`pt-[100px] ${style}`}>
+    <div className={`pt-[100px] grid justify-center ${style}`}>
       {title && (
         <div>
           <div className="">{title}</div>
-          <div className=""></div>
         </div>
       )}
-      <div className=" flex justify-center">{children}</div>
+      <div className="">{children}</div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Page from "@/components/page";
 export default function Contact() {
   return (
     <Page>
-      <div>A Contact</div>
+      <div>Prenez contact avec moi</div>
     </Page>
   );
 }
