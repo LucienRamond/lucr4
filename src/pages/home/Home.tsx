@@ -1,3 +1,9 @@
+import Page from "@/components/page";
+
 export default function Home() {
-  return <div>Lucr4</div>;
+  return (
+    <Page>
+      <div>Lucr4</div>
+    </Page>
+  );
 }
