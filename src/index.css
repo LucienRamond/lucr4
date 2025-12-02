@@ -15,10 +15,6 @@ button {
 button:hover {
   background-color: var(--input);
 }
-select,
-option {
-  background-color: var(--card);
-}
 #card {
   border: 1px solid var(--border);
   background-color: var(--card);
