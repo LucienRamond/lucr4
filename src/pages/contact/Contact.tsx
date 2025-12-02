@@ -15,7 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 export default function Contact() {
   return (
     <Page>
-      <Card id="card" className=" min-w-[730px]">
+      <Card id="card" className=" w-[730px]">
         <form>
           <FieldGroup>
             <FieldSet>

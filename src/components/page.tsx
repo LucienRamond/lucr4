@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 
 export default function Page({
   children,
-  title,
   style,
 }: {
   children: ReactNode;
@@ -11,14 +10,9 @@ export default function Page({
 }) {
   return (
     <div
-      className={`pt-[100px] max-w-[90%] mx-auto grid justify-center ${style}`}
+      className={`pt-[100px] max-w-[90%] min-w-[500px] mx-auto grid justify-center ${style}`}
     >
-      {title && (
-        <div>
-          <div className="">{title}</div>
-        </div>
-      )}
-      <div className="">{children}</div>
+      {children}
     </div>
   );
 }

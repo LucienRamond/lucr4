@@ -23,6 +23,7 @@ option {
   border: 1px solid var(--border);
   background-color: var(--card);
   padding: 1rem;
+  min-width: 200px;
 }
 :root {
   --radius: 0.65rem;
