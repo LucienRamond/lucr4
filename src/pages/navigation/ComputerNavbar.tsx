@@ -21,93 +21,108 @@ export default function ComputerNavbar() {
 
   return (
     <div className=" fixed w-full flex justify-center">
-      <NavigationMenu className="bg-white border rounded-2xl">
+      <NavigationMenu className="bg-(--secondary) border border-(--border) rounded-2xl">
         <NavigationMenuList className=" gap-0">
-          <NavigationMenuItem className="border-r h-20 flex items-center">
+          <NavigationMenuItem className="border-r border-(--border)  h-20 flex items-center">
             <NavigationMenuLink
               asChild
               className={`${navigationMenuTriggerStyle()} ${
-                location.pathname == "/" && "bg-black/10"
+                location.pathname == "/" && "bg-(--input)/75"
               }`}
             >
               <Link
                 href="/"
-                className=" hover:bg-black/10 h-full w-full rounded-r-none rounded-l-[15px]"
+                className=" hover:bg-(--input) h-full w-full rounded-r-none rounded-l-[15px]"
               >
                 <div className=" flex gap-2 p-2">
-                  <HomeIcon className=" scale-125 mt-1.5" />
-                  <div className=" text-lg font-semibold">Acceuil</div>
+                  <HomeIcon
+                    className=" scale-125 mt-1.5"
+                    color="var(--muted-foreground)"
+                  />
+                  <div className=" text-lg">Acceuil</div>
                 </div>
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className="border-r h-20 flex items-center">
+          <NavigationMenuItem className="border-r border-(--border) h-20 flex items-center">
             <NavigationMenuLink
               asChild
               className={`${navigationMenuTriggerStyle()} ${
-                location.pathname == "/a-propos" && "bg-black/10"
+                location.pathname == "/a-propos" && "bg-(--input)/75"
               }`}
             >
               <Link
                 href="/a-propos"
-                className=" hover:bg-black/10 h-full  rounded-none"
+                className=" hover:bg-(--input) h-full  rounded-none"
               >
                 <div className=" flex gap-2  p-2">
-                  <CircleQuestionMarkIcon className=" scale-125 mt-1.5" />
+                  <CircleQuestionMarkIcon
+                    color="var(--muted-foreground)"
+                    className=" scale-125 mt-1.5"
+                  />
                   <div className=" text-lg font-semibold">À propos</div>
                 </div>
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className="border-r h-20 flex items-center">
+          <NavigationMenuItem className="border-r border-(--border) h-20 flex items-center">
             <NavigationMenuLink
               asChild
               className={`${navigationMenuTriggerStyle()} ${
-                location.pathname == "/projets" && "bg-black/10"
+                location.pathname == "/projets" && "bg-(--input)/75"
               }`}
             >
               <Link
                 href="/projets"
-                className=" hover:bg-black/10 h-full  rounded-none"
+                className=" hover:bg-(--input) h-full  rounded-none"
               >
                 <div className=" flex gap-2  p-2">
-                  <FolderCodeIcon className=" scale-125 mt-1.5" />
+                  <FolderCodeIcon
+                    color="var(--muted-foreground)"
+                    className=" scale-125 mt-1.5"
+                  />
                   <div className=" text-lg font-semibold">Projets</div>
                 </div>
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className="border-r h-20 flex items-center">
+          <NavigationMenuItem className="border-r border-(--border) h-20 flex items-center">
             <NavigationMenuLink
               asChild
               className={`${navigationMenuTriggerStyle()} ${
-                location.pathname == "/competences" && "bg-black/10"
+                location.pathname == "/competences" && "bg-(--input)/75"
               }`}
             >
               <Link
                 href="/competences"
-                className=" hover:bg-black/10 h-full  rounded-none"
+                className=" hover:bg-(--input) h-full  rounded-none"
               >
                 <div className=" flex gap-2  p-2">
-                  <SettingsIcon className=" scale-125 mt-1.5" />
+                  <SettingsIcon
+                    color="var(--muted-foreground)"
+                    className=" scale-125 mt-1.5"
+                  />
                   <div className=" text-lg font-semibold">Compétences</div>
                 </div>
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className=" h-20 flex items-center">
+          <NavigationMenuItem className=" h-20 border-(--border) flex items-center">
             <NavigationMenuLink
               asChild
               className={`${navigationMenuTriggerStyle()} ${
-                location.pathname == "/contact" && "bg-black/10"
+                location.pathname == "/contact" && "bg-(--input)/75"
               }`}
             >
               <Link
                 href="/contact"
-                className=" hover:bg-black/10 h-full w-full rounded-l-none rounded-r-[15px]"
+                className=" hover:bg-(--input) h-full w-full rounded-l-none rounded-r-[15px]"
               >
                 <div className=" flex gap-2  p-2">
-                  <CircleUserRoundIcon className=" scale-125 mt-1.5" />
+                  <CircleUserRoundIcon
+                    color="var(--muted-foreground)"
+                    className=" scale-125 mt-1.5"
+                  />
                   <div className=" text-lg font-semibold">Contact</div>
                 </div>
               </Link>
