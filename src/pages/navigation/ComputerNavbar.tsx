@@ -20,7 +20,7 @@ export default function ComputerNavbar() {
   const location = useLocation();
 
   return (
-    <div className=" fixed w-full flex justify-center">
+    <div className=" fixed w-full -translate-x-2 flex justify-center">
       <NavigationMenu className="bg-(--secondary) border border-(--border) rounded-2xl">
         <NavigationMenuList className=" gap-0">
           <NavigationMenuItem className="border-r border-(--border)  h-20 flex items-center">

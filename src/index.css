@@ -15,6 +15,15 @@ button {
 button:hover {
   background-color: var(--input);
 }
+select,
+option {
+  background-color: var(--card);
+}
+#card {
+  border: 1px solid var(--border);
+  background-color: var(--card);
+  padding: 1rem;
+}
 :root {
   --radius: 0.65rem;
   --background: oklch(0.141 0.005 285.823);
