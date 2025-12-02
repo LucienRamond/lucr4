@@ -14,25 +14,34 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
 
 export default function Skills() {
   const [selectedSkills, setSelectedSkills] = useState("tous");
 
-  console.log(selectedSkills);
-
   return (
     <Page>
       <Select onValueChange={(value) => setSelectedSkills(value)}>
-        <SelectTrigger className="min-w-[200px] mb-2">
+        <SelectTrigger className="min-w-[250px] mb-2">
           <SelectValue placeholder="Tous" />
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className=" bg-(--secondary) border-(--border)">
           <SelectGroup>
-            <SelectItem value="tous">Tous</SelectItem>
-            <SelectItem value="front">Développement frontend</SelectItem>
-            <SelectItem value="back">Développement backend</SelectItem>
-            <SelectItem value="bdd">Base de données</SelectItem>
-            <SelectItem value="env">Environnement de travail</SelectItem>
+            <SelectItem className=" hover:bg-(--input)" value="tous">
+              Tous
+            </SelectItem>
+            <SelectItem className=" hover:bg-(--input)" value="front">
+              Développement frontend
+            </SelectItem>
+            <SelectItem className=" hover:bg-(--input)" value="back">
+              Développement backend
+            </SelectItem>
+            <SelectItem className=" hover:bg-(--input)" value="bdd">
+              Base de données
+            </SelectItem>
+            <SelectItem className=" hover:bg-(--input)" value="env">
+              Environnement de travail
+            </SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>
@@ -40,65 +49,33 @@ export default function Skills() {
       <div className="min-w-[50vw] grid gap-2 grid-cols-3">
         {selectedSkills == "front" &&
           frontend_skills.map((skill) => {
-            return (
-              <div className="border bg-blue-200 hover:bg-blue-300 rounded text-center p-2">
-                {skill}
-              </div>
-            );
+            return <Button key={skill}>{skill}</Button>;
           })}
         {selectedSkills == "back" &&
           backend_skills.map((skill) => {
-            return (
-              <div className="border bg-blue-200 hover:bg-blue-300 rounded text-center p-2">
-                {skill}
-              </div>
-            );
+            return <Button key={skill}>{skill}</Button>;
           })}
         {selectedSkills == "bdd" &&
           bdd_skills.map((skill) => {
-            return (
-              <div className="border bg-blue-200 hover:bg-blue-300 rounded text-center p-2">
-                {skill}
-              </div>
-            );
+            return <Button key={skill}>{skill}</Button>;
           })}
         {selectedSkills == "env" &&
           env_skills.map((skill) => {
-            return (
-              <div className="border bg-blue-200 hover:bg-blue-300 rounded text-center p-2">
-                {skill}
-              </div>
-            );
+            return <Button key={skill}>{skill}</Button>;
           })}
         {selectedSkills == "tous" && (
           <>
             {frontend_skills.map((skill) => {
-              return (
-                <div className="border bg-blue-200 hover:bg-blue-300 rounded text-center p-2">
-                  {skill}
-                </div>
-              );
+              return <Button key={skill}>{skill}</Button>;
             })}
             {backend_skills.map((skill) => {
-              return (
-                <div className="border bg-blue-200 hover:bg-blue-300 rounded text-center p-2">
-                  {skill}
-                </div>
-              );
+              return <Button key={skill}>{skill}</Button>;
             })}
             {bdd_skills.map((skill) => {
-              return (
-                <div className="border bg-blue-200 hover:bg-blue-300 rounded text-center p-2">
-                  {skill}
-                </div>
-              );
+              return <Button key={skill}>{skill}</Button>;
             })}
             {env_skills.map((skill) => {
-              return (
-                <div className="border bg-blue-200 hover:bg-blue-300 rounded text-center p-2">
-                  {skill}
-                </div>
-              );
+              return <Button key={skill}>{skill}</Button>;
             })}
           </>
         )}
