@@ -3,11 +3,11 @@ import MobileNavbar from "./MobileNavbar";
 
 export default function Navbar() {
   return (
-    <div className={`p-2`}>
-      <div className={`sm:block hidden`}>
+    <div>
+      <div className={`p-4 sm:block hidden`}>
         <ComputerNavbar />
       </div>
-      <div className="sm:hidden block">
+      <div className="sm:hidden block w-screen">
         <MobileNavbar />
       </div>
     </div>
