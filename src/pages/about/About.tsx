@@ -17,12 +17,12 @@ export default function About() {
           <CardTitle className=" grid grid-cols-2 items-center gap-4">
             <div className=" rounded-full mx-auto w-fit border-2 border-(--border)">
               <img
-                className="rounded-full h-[200px]"
+                className="rounded-full sm:h-[200px]"
                 src="/projects/imgs/me.jpg"
                 alt="Photo de Ramond Lucien"
               />
             </div>
-            <div className=" grid gap-2 grid-rows-2 h-[50%] items-center">
+            <div className=" grid sm:gap-2 gap-6 grid-rows-2 h-[50%] items-center">
               <div className=" text-xl sm:text-3xl">Ramond Lucien</div>
               <div className=" italic grid gap-2 sm:text-xl">
                 <div>{"{ Développeur front-end }"}</div>
