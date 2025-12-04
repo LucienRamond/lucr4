@@ -22,7 +22,7 @@ export default function Skills() {
 
   return (
     <Page>
-      <Card id="card">
+      <Card id="card" className="  w-[95vw]  lg:w-auto">
         <CardHeader className="gap-0 p-0 border-b border-b-(--border)">
           <Select onValueChange={(value) => setSelectedSkills(value)}>
             <SelectTrigger className="min-w-[250px]">
