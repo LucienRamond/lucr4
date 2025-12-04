@@ -22,7 +22,7 @@ export default function About() {
                 alt="Photo de Ramond Lucien"
               />
             </div>
-            <div className=" grid sm:gap-2 gap-6 grid-rows-2 h-[50%] items-center">
+            <div className=" grid sm:gap-2 gap-12 grid-rows-2 h-[50%] items-center">
               <div className=" text-xl sm:text-3xl">Ramond Lucien</div>
               <div className=" italic grid gap-2 sm:text-xl">
                 <div>{"{ Développeur front-end }"}</div>
