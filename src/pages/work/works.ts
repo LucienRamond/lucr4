@@ -15,6 +15,14 @@ const works = [
       "Création d'une plateforme utilisant Vite, React/TypeScript, Tailwind CSS et Shadcn pour les composants. Le backend est codé en Python avec le framework Flask.",
     url: "https://groovin.roisderien.fr",
   },
+  {
+    name: "Z parse solutions",
+    meta_description: "Plateforme de transformation et d'intégration de data",
+    img_name: "zparse.png",
+    description:
+      "Création et intégration de composants Typescript React et de leurs tests unitaires. Versioning avec Git et GitHub. Utilisation de Tailwind et Shadcn. Travail en méthode AGILE, gestion de tickets (JIRA).",
+    url: "https://zparse.io/",
+  },
 ];
 
 export default works;
