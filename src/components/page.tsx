@@ -10,7 +10,7 @@ export default function Page({
 }) {
   return (
     <div
-      className={`pt-[100px] lg:max-w-[90%] lg:min-w-[500px] mx-auto grid justify-center ${style}`}
+      className={`pt-[100px] lg:max-w-[90%] lg:min-w-[500px] mx-auto w-full grid justify-center ${style}`}
     >
       {children}
     </div>

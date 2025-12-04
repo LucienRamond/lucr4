@@ -15,7 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Card, CardDescription, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function Skills() {
   const [selectedSkills, setSelectedSkills] = useState("tous");
@@ -49,11 +49,15 @@ export default function Skills() {
             </SelectContent>
           </Select>
         </CardHeader>
-        <CardDescription>
-          <div className="min-w-[50vw] grid gap-2 grid-cols-3">
+        <CardContent>
+          <div className="min-w-[50vw] grid gap-2 grid-cols-2 sm:grid-cols-3">
             {selectedSkills == "front" &&
               frontend_skills.map((skill) => {
-                return <Button key={skill}>{skill}</Button>;
+                return (
+                  <Button className=" w-full" key={skill}>
+                    {skill}
+                  </Button>
+                );
               })}
             {selectedSkills == "back" &&
               backend_skills.map((skill) => {
@@ -84,7 +88,7 @@ export default function Skills() {
               </>
             )}
           </div>
-        </CardDescription>
+        </CardContent>
       </Card>
     </Page>
   );

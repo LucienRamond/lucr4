@@ -89,3 +89,61 @@ button:hover {
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.408 0.123 38.172);
 }
+/* Animations */
+.grow-menu {
+  animation: 0.75s ease slide;
+  transform-origin: top;
+}
+@keyframes slide {
+  0% {
+    height: 54px;
+  }
+  100% {
+    height: 460px;
+  }
+}
+.grow-menu-text {
+  animation: 0.9s ease slide-text;
+  transform-origin: top;
+}
+@keyframes slide-text {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 100%;
+  }
+}
+.reduce-menu {
+  animation: 0.75s ease slideout;
+}
+@keyframes slideout {
+  0% {
+    transform-origin: top;
+    height: 460px;
+  }
+  100% {
+    height: 54px;
+  }
+}
+.reduce-menu-text {
+  animation: 0.9s ease slide-text-out;
+  transform-origin: top;
+}
+@keyframes slide-text-out {
+  0% {
+    transform: scaleY(1);
+    opacity: 100%;
+  }
+  30% {
+    opacity: 0;
+  }
+  80% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}

@@ -12,7 +12,7 @@ import works from "./works";
 export default function Work() {
   return (
     <Page>
-      <div className=" grid grid-cols-3 gap-4">
+      <div className=" mx-4 max-w-[1400px] grid xl:grid-cols-3 sm:grid-cols-2 gap-4">
         {works.map((work) => {
           return (
             <Card

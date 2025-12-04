@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className={`p-4 sm:block hidden`}>
         <ComputerNavbar />
       </div>
-      <div className="sm:hidden block w-screen">
+      <div className="sm:hidden">
         <MobileNavbar />
       </div>
     </div>

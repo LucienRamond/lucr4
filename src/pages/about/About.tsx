@@ -12,7 +12,7 @@ import TextedSeparator from "@/components/ui/texted-separator";
 export default function About() {
   return (
     <Page>
-      <Card id="card" className=" w-[730px]">
+      <Card id="card" className="w-auto lg:w-[730px] m-2">
         <CardHeader>
           <CardTitle className=" grid grid-cols-2 items-center gap-4">
             <div className=" rounded-full mx-auto w-fit border-2 border-(--border)">
@@ -22,9 +22,9 @@ export default function About() {
                 alt="Photo de Ramond Lucien"
               />
             </div>
-            <div className=" grid grid-rows-2 h-[50%] items-center">
-              <div className=" text-3xl">Ramond Lucien</div>
-              <div className=" italic text-xl">
+            <div className=" grid gap-2 grid-rows-2 h-[50%] items-center">
+              <div className=" text-xl sm:text-3xl">Ramond Lucien</div>
+              <div className=" italic grid gap-2 sm:text-xl">
                 <div>{"{ Développeur front-end }"}</div>
                 <div>{"[ JS / TS / React / Vue.js ]"}</div>
               </div>
